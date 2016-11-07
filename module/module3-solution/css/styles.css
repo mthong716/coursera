@@ -1,0 +1,163 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+	font-size: 16px;
+	font-family: Arial, Helvetica, sans-serif;
+	
+}
+.container {
+	/*position: relative;*/
+}
+#navbar-header {
+	position: relative;
+	margin-left: 20px;
+}
+/** HEADER**/
+#header-nav {
+	background-color: #B6B4B4;
+	border-radius: 0;
+	border: 1px solid #000000;
+}
+.navbar-brand {
+	padding: 20px 0px 10px 0px;
+}
+.navbar-brand h1 {
+  font-family: 'Lora', serif;
+  color: #000000;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #222;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: .75;
+  position: absolute;
+  left:20px;
+  /*right: 30px;*/
+  /*left: 70px;*/
+}
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+}
+
+#box{
+	font-size: 16px;
+	margin-bottom: 20px;
+	overflow: hidden;
+	background-color: #B6B4B4;
+
+}
+
+#content {
+	padding: 10px;
+}
+
+h2 {
+  margin-top: 5px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+h3 {
+   padding: 2px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#collapsable-nav > div div {
+	text-align: center;
+	border-bottom: 1px solid white;
+}
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+
+	navbar-brand h1 {
+	    margin-left: -50px;
+	}
+	.navbar-collapse.collapse {
+		display: none!important; 
+	}
+	.navbar-brand{
+		margin-left: -70px;
+	}
+
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+	.navbar-brand h1 {
+	    margin-left: -30px;
+	}
+	.navbar-collapse.collapse {
+		display: none!important; 
+	}
+	.navbar-brand{
+		margin-left: -50px;
+	}
+	.navbar-brand h1 {
+  	/* Restaurant name */
+    padding-top: 10px;
+    font-size: 1vw; /* 1vw = 1% of viewpoint width */ 
+	}
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+	.navbar-collapse.collapse {
+		 display: none!important; 
+	}
+	.navbar-brand h1 {
+		margin-left: -10px;
+	}
+}
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+
+	#box {
+		margin-right: 20px;
+		margin-left: 20px;
+	}	
+
+	#nav-list {
+	 /* margin-top: 10px;*/
+	 margin-top: auto;
+	 margin-bottom: auto;
+	}
+
+	#nav-list a {
+	  color: black;
+	  text-align: center;
+	  font-weight: bold;
+	  border-top: 1px solid black;
+	  background: #E7E7E7;
+	}
+
+	#nav-list a:hover {
+	  background: #B6B4B4;
+	}
+	#nav-list a span {
+	  font-size: 1.8em;
+
+	}
+	.navbar-header button.navbar-toggle.collapsed {
+	  border: 1px solid black;
+
+	}
+
+	.navbar-default .navbar-toggle.collapsed .icon-bar {
+		background-color: #888;
+	}
+
+	.navbar-default .navbar-toggle {
+		border-color: white;
+	}
+
+	.navbar-default .navbar-toggle .icon-bar {
+	  background-color: #fff;
+	}
+
+}
